@@ -5,10 +5,10 @@ server:
     session.timeout: -1
 
 
-#accounturi: mongodb://test.hwlantian.com:27017
-#accountdatabase : account
-accounturi: mongodb://root:Hwlantian2123@blueskysensor.com:3718
+accounturi: mongodb://test.hwlantian.com:27017
 accountdatabase : account
+#accounturi: mongodb://root:Hwlantian2123@blueskysensor.com:3718
+#accountdatabase : account
 useruri : mongodb://test.hwlantian.com:27017
 userdatabase : sky_user
 
