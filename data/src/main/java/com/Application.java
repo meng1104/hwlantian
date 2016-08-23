@@ -34,12 +34,12 @@ public class Application implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         //user->account
-         //serviceRedir.getUserAll().stream().forEach(System.out::println);
-        // serviceRedir.getUserAll().stream().forEach((User u) -> serviceRedir.saveAccount(u));
+         serviceRedir.getUserAll().stream().forEach(System.out::println);
+         serviceRedir.getUserAll().stream().forEach((User u) -> serviceRedir.saveAccount(u));
 
        //account
-        serviceRedir.getAmountAll().stream().forEach(System.out::println);
-        System.out.print(serviceRedir.getByphone("13149455156").toString());
+        //serviceRedir.getAmountAll().stream().forEach(System.out::println);
+       // System.out.print(serviceRedir.getByphone("13149455156").toString());
 
         //deviaAdapter
       //  serviceRedir.getDeviceAll().stream().forEach(System.out::println);
