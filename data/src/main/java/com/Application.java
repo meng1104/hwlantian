@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
+import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
@@ -23,6 +24,7 @@ import org.springframework.stereotype.Service;
 @EnableRedisRepositories
 @EnableAutoConfiguration(exclude = {MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
 @ComponentScan(basePackages = {"com"})
+@EnableConfigServer
 public class Application implements CommandLineRunner {
    @Autowired
     private ServiceRedir serviceRedir;
