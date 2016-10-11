@@ -39,7 +39,7 @@ public class Application implements CommandLineRunner {
         // serviceRedir.getUserAll().stream().forEach(System.out::println);
         // serviceRedir.getUserAll().stream().forEach((User u) -> serviceRedir.saveAccount(u));
 
-       ///account
+       ///account test
         serviceRedir.getAmountAll().stream().forEach(System.out::println);
         System.out.print(serviceRedir.getByphone("13149455156").toString());
 
