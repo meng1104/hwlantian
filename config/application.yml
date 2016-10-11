@@ -1,5 +1,3 @@
-
-
 server:
     port: 81
     session.timeout: -1

@@ -1,0 +1,8 @@
+spring.cloud.config:
+
+  uri:  http://user:8e06c3de-0730-4882-898f-10f775fe7999@localhost:8888
+spring:
+  application:
+    name: clould
+  profiles:
+    active: data
