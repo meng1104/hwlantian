@@ -43,7 +43,7 @@ public class Application implements CommandLineRunner {
         serviceRedir.getAmountAll().stream().forEach(System.out::println);
         System.out.print(serviceRedir.getByphone("13149455156").toString());
 
-        //deviaAdapter
-      //  serviceRedir.getDeviceAll().stream().forEach(System.out::println);
+
+
     }
 }
