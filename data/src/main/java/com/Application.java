@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
-import org.springframework.cloud.config.server.EnableConfigServer;
+//import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
 import org.springframework.session.data.redis.config.annotation.web.http.EnableRedisHttpSession;
@@ -24,7 +24,7 @@ import org.springframework.stereotype.Service;
 @EnableRedisRepositories
 @EnableAutoConfiguration(exclude = {MongoAutoConfiguration.class, MongoDataAutoConfiguration.class})
 @ComponentScan(basePackages = {"com"})
-@EnableConfigServer
+
 public class Application implements CommandLineRunner {
    @Autowired
     private ServiceRedir serviceRedir;
@@ -39,9 +39,9 @@ public class Application implements CommandLineRunner {
         // serviceRedir.getUserAll().stream().forEach(System.out::println);
         // serviceRedir.getUserAll().stream().forEach((User u) -> serviceRedir.saveAccount(u));
 
-       //account
-        //serviceRedir.getAmountAll().stream().forEach(System.out::println);
-       // System.out.print(serviceRedir.getByphone("13149455156").toString());
+       ///account
+        serviceRedir.getAmountAll().stream().forEach(System.out::println);
+        System.out.print(serviceRedir.getByphone("13149455156").toString());
 
         //deviaAdapter
       //  serviceRedir.getDeviceAll().stream().forEach(System.out::println);
